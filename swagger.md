@@ -87,8 +87,8 @@ create new wallet with given names
 ```json
 {
   "id": 1,
-  "name": "wallet-name",
-  "creationDate": "2022-01-01 12:32.23"
+  "name": "WalletName",
+  "creationDate": "2022-10-22T09:47:52.595721658Z"
 }
 ```
 
@@ -115,8 +115,8 @@ This operation does not require authentication
 ```json
 {
   "id": 1,
-  "name": "wallet-name",
-  "creationDate": "2022-01-01 12:32.23"
+  "name": "WalletName",
+  "creationDate": "2022-10-22T09:47:52.595721658Z"
 }
 
 ```
