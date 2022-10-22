@@ -56,7 +56,9 @@ Status Code **200**
 This operation does not require authentication
 </aside>
 
-## post__api_wallet
+## createNewWallet
+
+<a id="opIdcreateNewWallet"></a>
 
 > Code samples
 
@@ -74,7 +76,7 @@ create new wallet with given names
 }
 ```
 
-<h3 id="post__api_wallet-parameters">Parameters</h3>
+<h3 id="createnewwallet-parameters">Parameters</h3>
 
 |Name|In|Type|Required|Description|
 |---|---|---|---|---|
@@ -92,7 +94,7 @@ create new wallet with given names
 }
 ```
 
-<h3 id="post__api_wallet-responses">Responses</h3>
+<h3 id="createnewwallet-responses">Responses</h3>
 
 |Status|Meaning|Description|Schema|
 |---|---|---|---|
