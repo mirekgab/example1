@@ -1,6 +1,8 @@
 ---
 title: TrackExpensensApp v0.2.1
-language_tabs: []
+language_tabs:
+  - http: HTTP
+  - shell: Shell
 toc_footers: []
 includes: []
 search: true
@@ -13,7 +15,7 @@ headingLevel: 2
 
 <h1 id="trackexpensensapp">TrackExpensensApp v0.2.1</h1>
 
-> Scroll down for example requests and responses.
+> Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.
 
 Hello world
 
@@ -24,6 +26,20 @@ Hello world
 <a id="opIdgetAllWallets"></a>
 
 > Code samples
+
+```http
+GET /api/wallet HTTP/1.1
+
+Accept: application:json
+
+```
+
+```shell
+# You can also use wget
+curl -X GET /api/wallet \
+  -H 'Accept: application:json'
+
+```
 
 `GET /api/wallet`
 
@@ -61,6 +77,22 @@ This operation does not require authentication
 <a id="opIdcreateNewWallet"></a>
 
 > Code samples
+
+```http
+POST /api/wallet HTTP/1.1
+
+Content-Type: application/json
+Accept: application/json
+
+```
+
+```shell
+# You can also use wget
+curl -X POST /api/wallet \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json'
+
+```
 
 `POST /api/wallet`
 
