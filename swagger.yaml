@@ -1,0 +1,70 @@
+openapi: 3.0.3
+info:
+  title: TrackExpensensApp
+  description: Hello world
+  version: 0.2.1
+
+paths:
+  /api/wallet:
+    get:
+      tags:
+        - wallet
+      summary: get all wallets
+      description: provides information about all wallets
+      operationId: getAllWallets
+      responses:
+        '200':
+          description: successful operation
+          content: 
+            application:json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/WalletDTO'
+    post:
+      tags: 
+        - wallet
+      summary: create new wallet
+      description: create new wallet with given names
+      operationId: createNewWallet
+      requestBody:
+        description: create new wallet
+        content:
+          application/json:
+            schema: 
+              $ref: '#/components/schemas/CreateWalletDTO'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/WalletDTO'
+        '405':
+          description: invalid input data
+      
+components:
+  schemas:
+    WalletDTO:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1
+        name:
+          type: string
+          format: string
+          example: "WalletName"
+        creationDate:
+          type: string
+          format: date-time
+          example: 2022-10-22T09:47:52.595721658Z
+    CreateWalletDTO:
+      type: object
+      properties:
+        name: 
+          type: string
+          format: string
+          
+    
